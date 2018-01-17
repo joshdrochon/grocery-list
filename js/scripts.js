@@ -15,10 +15,19 @@ $(document).ready(function(){
     });
     sortedGroceries.sort();
 
-    toUpper = function(sortedGroceries){
+    var toUpper = function(sortedGroceries){
+
       return sortedGroceries.toUpperCase();
     };
+
     var sortedUpper = sortedGroceries.map(toUpper);
-    alert(sortedUpper);
+
+    sortedUpper.forEach(function(item){
+      $("#capSortList").append("<li>" + item + "</li>");
+    });
+
+    $(".initially-showing").hide();
+    $("#groceryList").show();
+
   });
 });

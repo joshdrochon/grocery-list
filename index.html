@@ -9,44 +9,44 @@
   </head>
   <body>
     <div class="container">
+      <div class="initially-showing">
       <h2>Throw some of your <u>groceries</u> in the text fields!</h2>
       </br>
       <form id="groceries">
-          <div class="form-group"> <!--form-group is a bootstrap class-->
-            <label>Item I</label>
-            <input id="itemI" type="text" name="" value="ex. chocolate">
-          </div>
-          <div class="form-group"> <!--form-group is a bootstrap class-->
-            <label>Item II</label>
-            <input id="itemII" type="text" name="" value="">
-          </div>
-          <div class="form-group"> <!--form-group is a bootstrap class-->
-            <label>Item III</label>
-            <input id="itemIII" type="text" name="" value="">
-          </div>
-          <div class="form-group"> <!--form-group is a bootstrap class-->
-            <label>Item IV</label>
-            <input id="itemIV" type="text" name="" value="">
-          </div>
-          <div class="form-group"> <!--form-group is a bootstrap class-->
-            <label>Item V</label>
-            <input id="itemV" type="text" name="" value="">
-          </div>
-          <hr>
-          <button class="btn btn-success" name="button">Confirmar</button>
+        <div class="form-group"> <!--form-group is a bootstrap class-->
+          <label>Item I</label>
+          <input id="itemI" type="text" name="" value="ex. chocolate">
+        </div>
+        <div class="form-group"> <!--form-group is a bootstrap class-->
+          <label>Item II</label>
+          <input id="itemII" type="text" name="" value="">
+        </div>
+        <div class="form-group"> <!--form-group is a bootstrap class-->
+          <label>Item III</label>
+          <input id="itemIII" type="text" name="" value="">
+        </div>
+        <div class="form-group"> <!--form-group is a bootstrap class-->
+          <label>Item IV</label>
+          <input id="itemIV" type="text" name="" value="">
+        </div>
+        <div class="form-group"> <!--form-group is a bootstrap class-->
+          <label>Item V</label>
+          <input id="itemV" type="text" name="" value="">
+        </div>
+        <hr>
+        <button class="btn btn-success" name="button">Confirmar</button>
         <form><!--end iceCream-->
-          <div id="summary">
+        </div><!--end initially-showing-->
+          <div id="groceryList">
             <hr>
-            <ul>
-              <li class="itemI"></li>
-              <li class="itemII"></li>
-              <li class="itemIII"></li>
-              <li class="itemIV"></li>
-              <li class="itemV"></li>
+            <ul id="capSortList">
+              <!--printed via jQuery-->
             </ul>
             <hr>
 
-          </div>
+            <p>Cool you've got some cool groceries!</p>
+
+          </div><!--end grocery list-->
       </div><!--end container-->
   </body>
 </html>
